@@ -15,6 +15,8 @@ We're not only interested in the final result we want to see what your process w
 
 If you do not provide a git history of your work the assignment can not be regarded as satisfactory.
 
+Commited on: https://github.com/LPascholatti/flashcardapp
+
 ## Requirements
 
 The requirements of the app come from the user's perspective you can implement as you see fit. However, we would like to see DOM manipulation as part of the app.
@@ -25,6 +27,9 @@ You have to build a flash card app. Flash cards are cards with a question on one
 
 1. As a student I want to see a random question so I can test myself
 2. As a student I want to access the flashcard app from the internet so I can test myself anywhere I am (you can put the website online using netlify or github pages).
+
+Deployed in Netlify: https://amazing-mccarthy-0ace00.netlify.com/
+
 3. As a student I want to see the answer to the question so I can see if I was right.
 4. As a student I want to get a new questions without having to reload the page so I’m not dependent on continuous internet connection.
 5. As a student I want to add my own flashcards with a question and an answer so I can test myself with questions that I personally struggle with.
