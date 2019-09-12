@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,23 @@
     <title>Flashcard App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Flashcards</h1>
     <div class="flashcard_container">
+        <p> Welcome to flashcards app! By default, you are given a card with a random word in English, click on 'Flip
+            card' to check its Dutch couterpart.<br />
+            Click on 'Flip back' to check the card in English again.
+        </p>
         <div class="flashcard">
-            <h3>Some English Word Here</h3>
+            <h3 id="word"> no card </h3>
 
             <!-- Pressing this button should show the Dutch word -->
-            <button>Flip card</button>
+            <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
+            <button id="button2" onclick="flipBack()">Flip back - English</button>
         </div>
     </div>
 </body>
 <script src="index.js"></script>
+
 </html>
