@@ -1,4 +1,5 @@
 let flashcards = [
+  { id: 0, question: 'Earth', answer: 'Aarde'},
   { id: 1, question: 'Good Afternoon', answer: 'Goedemiddag' },
   { id: 2, question: 'Bicycle', answer: 'Fiets' },
   { id: 3, question: 'Vacuum Cleaner', answer: 'Stofzuiger' },
