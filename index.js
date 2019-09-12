@@ -4,16 +4,25 @@ let flashcards = [
   { id: 3, question: 'Vacuum Cleaner', answer: 'Stofzuiger' },
   { id: 4, question: 'Strong', answer: 'Sterk'},
   { id: 5, question: 'Backpack', answer: 'Rugzak'},
-  { id: 6, question: 'Guitar', answer: 'Gitar'}
+  { id: 6, question: 'Guitar', answer: 'Gitar'},
+  { id: 7, question: 'Spinach', answer: 'Spinazie'},
+  { id: 8, question: 'House', answer: 'Huis'},
+  { id: 9, question: 'Cheese', answer: 'Kaas'},
+  { id: 10, question: 'Wine', answer: 'Wijn'}
 ]
 
 let randomCardNumber = Math.floor(Math.random() * flashcards.length)
 console.log("Random", randomCardNumber)
 
+let newRandomCardNumber = Math.floor(Math.random() * flashcards.length)
+console.log("New Random", newRandomCardNumber)
+
 const word = document.getElementById("word")
+const newWord = document.getElementById("word")
 const button = document.getElementById("button")
 
 console.log(word)
+console.log(newWord)
 console.log(flashcards[1].question)
 console.log(button)
 
@@ -25,5 +34,9 @@ function returnAnswer() {
 
 function flipBack() {
     return word.innerText = flashcards[randomCardNumber].question
+}
+
+function returnNewWord () {
+  newWord.innerText = flashcards[newRandomCardNumber].question 
 }
 
