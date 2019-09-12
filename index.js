@@ -14,16 +14,11 @@ let flashcards = [
 let randomCardNumber = Math.floor(Math.random() * flashcards.length)
 console.log("Random", randomCardNumber)
 
-let newRandomCardNumber = Math.floor(Math.random() * flashcards.length)
-console.log("New Random", newRandomCardNumber)
-
 const word = document.getElementById("word")
-const newWord = document.getElementById("word")
 const button = document.getElementById("button")
 
 console.log(word)
-console.log(newWord)
-console.log(flashcards[1].question)
+console.log("Question", flashcards[randomCardNumber].question)
 console.log(button)
 
 word.innerText = flashcards[randomCardNumber].question
@@ -34,9 +29,5 @@ function returnAnswer() {
 
 function flipBack() {
     return word.innerText = flashcards[randomCardNumber].question
-}
-
-function returnNewWord () {
-  newWord.innerText = flashcards[newRandomCardNumber].question 
 }
 
