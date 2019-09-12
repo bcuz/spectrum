@@ -8,7 +8,12 @@ let flashcards = [
   { id: 7, question: 'Spinach', answer: 'Spinazie'},
   { id: 8, question: 'House', answer: 'Huis'},
   { id: 9, question: 'Cheese', answer: 'Kaas'},
-  { id: 10, question: 'Wine', answer: 'Wijn'}
+  { id: 10, question: 'Wine', answer: 'Wijn'},
+  { id: 11, question: 'Onions', answer: 'Uien'},
+  { id: 12, question: 'Office', answer: 'Kantoor'},
+  { id: 13, question: 'University', answer: 'Universiteit'},
+  { id: 14, question: 'Beer', answer: 'Bier'},
+  { id: 15, question: 'Money', answer: 'Geld'}
 ]
 
 let randomCardNumber = Math.floor(Math.random() * flashcards.length)
