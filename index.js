@@ -31,3 +31,6 @@ function flipBack() {
     return word.innerText = flashcards[randomCardNumber].question
 }
 
+function reload() {
+  location.reload(true)
+}
