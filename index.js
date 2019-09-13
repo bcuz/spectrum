@@ -57,7 +57,7 @@ word.innerText = mapQuestions[randomCardNumber]
   listOfQuestions.appendChild(textNodeQuestions)
   document.querySelector('.questions').appendChild(listOfQuestions)
 
-  const listOfAnswers = document.querySelector('.answers')
+  const listOfAnswers = document.createElement('li')
   const textNodeAnswers = document.createTextNode(mapAnswers)
   
   const displayList = () => {
