@@ -17,24 +17,24 @@
         <div class="flashcard_container">
             <p> Welcome to flashcards app! By default, you are given a card with a random word in English, click on
                 'Flip
-                card' to check its Dutch couterpart.<br />
-                Click on 'Flip back' to check the card in English again.<br />
+                card' to check its Dutch couterpart.<br>
+                Click on 'Flip back' to check the card in English again.<br>
                 You can also drag random cards in English and Dutch to your main page.
             </p>
-            <div class="flashcard">
-                <p>Your card is:</p>
+            <br>
+            <p>Your cards are:</p>
+            <div class="flashcard" style="width: 160px; height: 100px; background-color: gray; background-position: center;">
                 <h3 id="word"> no card </h3>
-
-                <!-- Pressing this button should show the Dutch word -->
-                <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
-                <button id="button2" onclick="flipBack()">Flip back - English</button>
-                <button id="button3" onclick="reload()">Refresh Deck</button>
-                <button id="button5" onclick="appendNewWord()">Drag Random Card - [ENG]</button>
-                <button id="button6" onclick="returnAnswerAppend()">Drag Random Card - [NL]</button>
             </div>
-            <br />
+            <br>
+            <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
+            <button id="button2" onclick="flipBack()">Flip back - English</button>
+            <button id="button3" onclick="reload()">Refresh Deck</button>
+            <button id="button5" onclick="appendNewWord()">Drag Random Card - [ENG]</button>
+            <button id="button6" onclick="returnAnswerAppend()">Drag Random Card - [NL]</button>
+            <br>
             <ul class="questions"> Your initial cards are: </ul>
-            <br />
+            <br>
             <button id="button4" onclick="displayList()"> Show Answers </button>
             <ul class="answers"> Your answers are:</ul>
         </div>
