@@ -65,6 +65,3 @@ word.innerText = mapQuestions[randomCardNumber]
     document.querySelector('.answers').appendChild(listOfAnswers)
   }
 
-  console.log("List of answers", listOfAnswers)
-
-  console.log("List of Questions", mapQuestions[randomCardNumber])
