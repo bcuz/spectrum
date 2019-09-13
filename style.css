@@ -1,1 +1,9 @@
 /* Add styles here! Make it look a bit pretty! */
+
+#header-title {
+  text-align: center;
+}
+
+.flashcard {
+  text-align: center;
+}

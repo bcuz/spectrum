@@ -15,9 +15,9 @@ let flashcards = [
   { id: 13, question: 'University', answer: 'Universiteit' },
   { id: 14, question: 'Beer', answer: 'Bier' },
   { id: 15, question: 'Money', answer: 'Geld' }
-  // { id: 16, questions: 'Banana', answer: 'Banaan' },
+  // { id: 16, questions: 'Banana', answer: 'Banaan' }
   // { id: 17, questions: 'Good morning', answer: 'Goedemorgen' },
-  // { id: 18, questions: 'Bread', answer: 'Brood' },
+  // { id: 18, questions: 'Bread', answer: 'Brood' }
   // { id: 19, questions: 'Work', answer: 'Werk' },
   // { id: 20, question: 'Health', answer: 'Gezondheid' }
 ]

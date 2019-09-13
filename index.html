@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flashcard App</title>
     <link rel="stylesheet" href="style.css">
-    <h1>Flashcards</h1>
+    <h1 id="header-title">Flashcards</h1>
 </head>
 
 <body>
@@ -17,14 +17,15 @@
             Click on 'Flip back' to check the card in English again.
         </p>
         <div class="flashcard">
+            <p>Your card is:</p>
             <h3 id="word"> no card </h3>
 
             <!-- Pressing this button should show the Dutch word -->
             <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
             <button id="button2" onclick="flipBack()">Flip back - English</button>
             <button id="button3" onclick="reload()">Refresh Deck</button>
-            <button id="button5" onclick="appendNewWord()">Drag Random Card - Question[ENG]</button>
-            <button id="button6" onclick="returnAnswerAppend()">Drag Random Card - Answer[NL]</button>
+            <button id="button5" onclick="appendNewWord()">Drag Random Card - [ENG]</button>
+            <button id="button6" onclick="returnAnswerAppend()">Drag Random Card - [NL]</button>
         </div>
         <br />
             <ul class="questions"> Your cards are: </ul>
