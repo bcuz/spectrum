@@ -1,3 +1,5 @@
+//more than 15 flashcards will return undefined
+
 let flashcards = [
   { id: 0, question: 'Earth', answer: 'Aarde'},
   { id: 1, question: 'Good Afternoon', answer: 'Goedemiddag' },
@@ -36,7 +38,6 @@ const button = document.getElementById("button")
 
 console.log(word)
 console.log("Question", flashcards[randomCardNumber].question)
-console.log(button)
 
 word.innerText = mapQuestions[randomCardNumber]
   
