@@ -65,3 +65,18 @@ word.innerText = mapQuestions[randomCardNumber]
     document.querySelector('.answers').appendChild(listOfAnswers)
   }
 
+  function appendNewWord(){
+    let randomCardNumber = Math.floor(Math.random() * flashcards.length)
+    const newQuestion = document.createElement('h3')
+    const textNodeNewQuestion = document.createTextNode(mapQuestions[randomCardNumber])
+    newQuestion.appendChild(textNodeNewQuestion)
+    document.querySelector('.flashcard').appendChild(newQuestion)
+  }
+
+  function returnAnswerAppend() {
+    let randomCardNumber = Math.floor(Math.random() * flashcards.length)
+    const newAnswer = document.createElement('h3')
+    const textNodeNewAnswer = document.createTextNode(mapAnswers[randomCardNumber])
+    newAnswer.appendChild(textNodeNewAnswer)
+    document.querySelector('.flashcard').appendChild(newAnswer)
+  }
