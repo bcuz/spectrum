@@ -23,22 +23,36 @@
             </p>
             <br>
             <p>Your cards are:</p>
-            <div class="flashcard" style="width: 160px; height: 100px; background-color: gray; background-position: center;">
+            <div class="flashcard"
+                style="width: 160px; height: 100px; background-color: gray; background-position: center;">
                 <br>
                 <h3 id="word"> no card </h3>
                 <br>
             </div>
-            <br>
-            <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
-            <button id="button2" onclick="flipBack()">Flip back - English</button>
-            <button id="button3" onclick="reload()">Refresh Deck</button>
-            <button id="button5" onclick="appendNewWord()">Drop Random Card - [ENG]</button>
-            <button id="button6" onclick="returnAnswerAppend()">Drop Random Card - [NL]</button>
-            <br>
-            <ul class="questions"> Your initial cards are: </ul>
-            <br>
-            <button id="button4" onclick="displayList()"> Show Answers </button>
-            <ul class="answers"> Your answers are:</ul>
+            <div class="buttons">
+                <br>
+                <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
+                <button id="button2" onclick="flipBack()">Flip back - English</button>
+                <button id="button3" onclick="reload()">Refresh Deck</button>
+                <button id="button5" onclick="appendNewWord()">Drop Random Card - [ENG]</button>
+                <button id="button6" onclick="returnAnswerAppend()">Drop Random Card - [NL]</button>
+                <br>
+                <ul class="questions"> Your initial cards are: </ul>
+                <br>
+                <button id="button4" onclick="displayList()"> Show Answers </button>
+                <ul class="answers"> Your answers are:</ul>
+            </div>
+            <div class="form">
+                <br>
+                Add Your Own Cards:
+                <br>
+                <br>
+                <form class="submitQuestionsAnswers"> Question:
+                    <input type="text" class="questionForm"> Answer:
+                    <input type="text" class="questionForm">
+                    <input type="submit" class="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </main>
 </body>

@@ -71,6 +71,11 @@ word.innerText = mapQuestions[randomCardNumber]
     const newQuestion = document.createElement('h3')
     const textNodeNewQuestion = document.createTextNode(mapQuestions[randomCardNumber])
     newQuestion.appendChild(textNodeNewQuestion)
+    newQuestion.style.backgroundColor = 'gray'
+    newQuestion.style.backgroundPosition = 'center'
+    newQuestion.style.height = '100px'
+    newQuestion.style.width = '160px'
+    newQuestion.style.fontStyle = 'bold'
     document.querySelector('.flashcard').appendChild(newQuestion)
   }
 
@@ -79,5 +84,10 @@ word.innerText = mapQuestions[randomCardNumber]
     const newAnswer = document.createElement('h3')
     const textNodeNewAnswer = document.createTextNode(mapAnswers[randomCardNumber])
     newAnswer.appendChild(textNodeNewAnswer)
+    newAnswer.style.backgroundColor = 'gray'
+    newAnswer.style.backgroundPosition = 'center'
+    newAnswer.style.height = '100px'
+    newAnswer.style.width = '160px'
+    newAnswer.style.fontStyle = 'bold'
     document.querySelector('.flashcard').appendChild(newAnswer)
   }
