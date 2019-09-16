@@ -113,7 +113,7 @@ word.innerText = mapQuestions[randomCardNumber]
     newCard.style.width = '160px'
     newCard.style.fontStyle = 'bold'
 
-    document.forms['.submitQuestionsAnswers'].reset()
+    document.getElementById('submitQuestionsAnswers').reset()
   })
   
   console.log("Flashcards Array", flashcards)
