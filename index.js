@@ -103,9 +103,7 @@ word.innerText = mapQuestions[randomCardNumber]
 
     const newCard = document.createElement('h3')
     const textNodeQuestion = document.createTextNode(valueQuestion + " (ENG)" + " " + valueAnswer + " (NL)")
-    // const textNodeAnswer = document.createTextNode(valueAnswer)
     newCard.appendChild(textNodeQuestion)
-    // newCard.appendChild(textNodeAnswer)
     document.querySelector('.flashcard').appendChild(newCard)
     newCard.style.backgroundColor = 'yellow'
     newCard.style.backgroundPosition = 'center'
