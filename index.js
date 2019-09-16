@@ -1,5 +1,3 @@
-//more than 15 flashcards will return undefined
-
 let flashcards = [
   { id: 0, question: 'Earth', answer: 'Aarde'},
   { id: 1, question: 'Good Afternoon', answer: 'Goedemiddag' },
@@ -16,12 +14,12 @@ let flashcards = [
   { id: 12, question: 'Office', answer: 'Kantoor' },
   { id: 13, question: 'University', answer: 'Universiteit' },
   { id: 14, question: 'Beer', answer: 'Bier' },
-  { id: 15, question: 'Money', answer: 'Geld' }
-  // { id: 16, questions: 'Banana', answer: 'Banaan' }
-  // { id: 17, questions: 'Good morning', answer: 'Goedemorgen' },
-  // { id: 18, questions: 'Bread', answer: 'Brood' }
-  // { id: 19, questions: 'Work', answer: 'Werk' },
-  // { id: 20, question: 'Health', answer: 'Gezondheid' }
+  { id: 15, question: 'Money', answer: 'Geld' },
+  { id: 16, question: 'Banana', answer: 'Banaan' },
+  { id: 17, question: 'Good morning', answer: 'Goedemorgen' },
+  { id: 18, question: 'Bread', answer: 'Brood' },
+  { id: 19, question: 'Work', answer: 'Werk' },
+  { id: 20, question: 'Health', answer: 'Gezondheid'}
 ]
 
 let randomCardNumber = Math.floor(Math.random() * flashcards.length)
