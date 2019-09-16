@@ -17,6 +17,8 @@ If you do not provide a git history of your work the assignment can not be regar
 
 Commited on: https://github.com/LPascholatti/flashcardapp
 
+Trello Board: https://trello.com/b/1NDfqzFN/flashcard-app
+
 ## Requirements
 
 The requirements of the app come from the user's perspective you can implement as you see fit. However, we would like to see DOM manipulation as part of the app.
@@ -33,7 +35,7 @@ Deployed in Netlify: https://amazing-mccarthy-0ace00.netlify.com/ - OK
 
 3. As a student I want to see the answer to the question so I can see if I was right. - OK
 
-4. As a student I want to get a new questions without having to reload the page so I’m not dependent on continuous internet connection.
+4. As a student I want to get new questions without having to reload the page so I’m not dependent on continuous internet connection.
 OK
 
 5. As a student I want to add my own flashcards with a question and an answer so I can test myself with questions that I personally struggle with.
