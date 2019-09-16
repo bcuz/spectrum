@@ -102,6 +102,18 @@ word.innerText = mapQuestions[randomCardNumber]
     const valueAnswer = addCardForm.querySelector('.answerForm').value;
     console.log("Value Answer Input", valueAnswer)
     flashcards.push({id: (flashcards.length + 1), question: valueQuestion, answer: valueAnswer});
+
+    const newCard = document.createElement('h3')
+    const textNode = document.createTextNode(valueQuestion)
+    newCard.appendChild(textNode)
+    document.querySelector('.flashcard').appendChild(newCard)
+    newCard.style.backgroundColor = 'gray'
+    newCard.style.backgroundPosition = 'center'
+    newCard.style.height = '100px'
+    newCard.style.width = '160px'
+    newCard.style.fontStyle = 'bold'
+
+    document.forms['.submitQuestionsAnswers'].reset()
   })
   
   console.log("Flashcards Array", flashcards)
