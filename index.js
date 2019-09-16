@@ -69,7 +69,7 @@ word.innerText = mapQuestions[randomCardNumber]
   function appendNewWord(){
     let randomCardNumber = Math.floor(Math.random() * flashcards.length)
     const newQuestion = document.createElement('h3')
-    const textNodeNewQuestion = document.createTextNode(mapQuestions[randomCardNumber])
+    const textNodeNewQuestion = document.createTextNode(flashcards[randomCardNumber].question)
     newQuestion.appendChild(textNodeNewQuestion)
     newQuestion.style.backgroundColor = 'red'
     newQuestion.style.backgroundPosition = 'center'
@@ -82,7 +82,7 @@ word.innerText = mapQuestions[randomCardNumber]
   function returnAnswerAppend() {
     let randomCardNumber = Math.floor(Math.random() * flashcards.length)
     const newAnswer = document.createElement('h3')
-    const textNodeNewAnswer = document.createTextNode(mapAnswers[randomCardNumber])
+    const textNodeNewAnswer = document.createTextNode(flashcards[randomCardNumber].answer)
     newAnswer.appendChild(textNodeNewAnswer)
     newAnswer.style.backgroundColor = 'blue'
     newAnswer.style.backgroundPosition = 'center'
@@ -114,8 +114,7 @@ word.innerText = mapQuestions[randomCardNumber]
     newCard.style.height = '75px'
     newCard.style.width = '160px'
     newCard.style.fontStyle = 'bold'
-
-
+    
     document.getElementById('submitQuestionsAnswers').reset()
   })
   
