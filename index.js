@@ -71,9 +71,9 @@ word.innerText = mapQuestions[randomCardNumber]
     const newQuestion = document.createElement('h3')
     const textNodeNewQuestion = document.createTextNode(mapQuestions[randomCardNumber])
     newQuestion.appendChild(textNodeNewQuestion)
-    newQuestion.style.backgroundColor = 'gray'
+    newQuestion.style.backgroundColor = 'red'
     newQuestion.style.backgroundPosition = 'center'
-    newQuestion.style.height = '100px'
+    newQuestion.style.height = '75px'
     newQuestion.style.width = '160px'
     newQuestion.style.fontStyle = 'bold'
     document.querySelector('.flashcard').appendChild(newQuestion)
@@ -84,9 +84,9 @@ word.innerText = mapQuestions[randomCardNumber]
     const newAnswer = document.createElement('h3')
     const textNodeNewAnswer = document.createTextNode(mapAnswers[randomCardNumber])
     newAnswer.appendChild(textNodeNewAnswer)
-    newAnswer.style.backgroundColor = 'gray'
+    newAnswer.style.backgroundColor = 'purple'
     newAnswer.style.backgroundPosition = 'center'
-    newAnswer.style.height = '100px'
+    newAnswer.style.height = '75px'
     newAnswer.style.width = '160px'
     newAnswer.style.fontStyle = 'bold'
     document.querySelector('.flashcard').appendChild(newAnswer)
@@ -104,14 +104,17 @@ word.innerText = mapQuestions[randomCardNumber]
     flashcards.push({id: (flashcards.length + 1), question: valueQuestion, answer: valueAnswer});
 
     const newCard = document.createElement('h3')
-    const textNode = document.createTextNode(valueQuestion)
-    newCard.appendChild(textNode)
+    const textNodeQuestion = document.createTextNode(valueQuestion + " (ENG)" + " " + valueAnswer + " (NL)")
+    // const textNodeAnswer = document.createTextNode(valueAnswer)
+    newCard.appendChild(textNodeQuestion)
+    // newCard.appendChild(textNodeAnswer)
     document.querySelector('.flashcard').appendChild(newCard)
-    newCard.style.backgroundColor = 'gray'
+    newCard.style.backgroundColor = 'blue'
     newCard.style.backgroundPosition = 'center'
-    newCard.style.height = '100px'
+    newCard.style.height = '75px'
     newCard.style.width = '160px'
     newCard.style.fontStyle = 'bold'
+
 
     document.getElementById('submitQuestionsAnswers').reset()
   })
