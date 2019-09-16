@@ -36,9 +36,10 @@ Deployed in Netlify: https://amazing-mccarthy-0ace00.netlify.com/ - OK
 4. As a student I want to get a new questions without having to reload the page so I’m not dependent on continuous internet connection.
 OK
 
-WORKING ON:
-
 5. As a student I want to add my own flashcards with a question and an answer so I can test myself with questions that I personally struggle with.
+OK
+
+WORKING ON:
 
 6. As a student I want to be able to delete flashcards so I can keep testing myself with relevant questions.
 
