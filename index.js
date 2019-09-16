@@ -84,7 +84,7 @@ word.innerText = mapQuestions[randomCardNumber]
     const newAnswer = document.createElement('h3')
     const textNodeNewAnswer = document.createTextNode(mapAnswers[randomCardNumber])
     newAnswer.appendChild(textNodeNewAnswer)
-    newAnswer.style.backgroundColor = 'purple'
+    newAnswer.style.backgroundColor = 'blue'
     newAnswer.style.backgroundPosition = 'center'
     newAnswer.style.height = '75px'
     newAnswer.style.width = '160px'
@@ -109,7 +109,7 @@ word.innerText = mapQuestions[randomCardNumber]
     newCard.appendChild(textNodeQuestion)
     // newCard.appendChild(textNodeAnswer)
     document.querySelector('.flashcard').appendChild(newCard)
-    newCard.style.backgroundColor = 'blue'
+    newCard.style.backgroundColor = 'yellow'
     newCard.style.backgroundPosition = 'center'
     newCard.style.height = '75px'
     newCard.style.width = '160px'
