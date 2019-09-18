@@ -83,6 +83,7 @@ function appendNewWord() {
   newQuestion.style.height = '75px'
   newQuestion.style.width = '160px'
   newQuestion.style.fontStyle = 'bold'
+  newQuestion.style.border = 'solid'
   flashcardsClass.appendChild(newQuestion)
 }
 
@@ -96,6 +97,7 @@ function returnAnswerAppend() {
   newAnswer.style.height = '75px'
   newAnswer.style.width = '160px'
   newAnswer.style.fontStyle = 'bold'
+  newAnswer.style.border = 'solid'
   flashcardsClass.appendChild(newAnswer)
 }
 

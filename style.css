@@ -7,17 +7,22 @@
 .flashcard_container {
   text-align: center;
   padding: 3rem;
+  border: solid;
+  margin: 2rem;
 }
 
 .flashcard {
   text-align: center;
   width: 160;
   height: 75;
+  border: solid;
 }
 
 .header {
   background-color: #c5d4ed ;
   padding: 3rem;
+  border: solid;
+  text-align: center;
 }
 
 main {
@@ -28,11 +33,14 @@ footer {
   text-align: center;
   background-color: #c5d4ed ;
   padding: 3rem;
+  border: solid;
 }
 
 .buttons {
   padding: 3rem;
   text-align: center;
+  border: solid;
+  margin: 2rem;
 }
 
 body {
