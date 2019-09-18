@@ -118,9 +118,10 @@ addCardForm.addEventListener('submit', function (event) {
   flashcardsClass.appendChild(newCard)
   newCard.style.backgroundColor = 'yellow'
   newCard.style.backgroundPosition = 'center'
-  newCard.style.height = '75px'
+  newCard.style.height = '85px'
   newCard.style.width = '160px'
   newCard.style.fontStyle = 'bold'
+  newCard.style.border = 'solid'
 
   document.getElementById('submitQuestionsAnswers').reset()
 })
