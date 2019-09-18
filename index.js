@@ -1,5 +1,5 @@
 let flashcards = [
-  { id: 0, question: 'Earth', answer: 'Aarde'},
+  { id: 0, question: 'Earth', answer: 'Aarde' },
   { id: 1, question: 'Good Afternoon', answer: 'Goedemiddag' },
   { id: 2, question: 'Bicycle', answer: 'Fiets' },
   { id: 3, question: 'Vacuum Cleaner', answer: 'Stofzuiger' },
@@ -19,8 +19,10 @@ let flashcards = [
   { id: 17, question: 'Good morning', answer: 'Goedemorgen' },
   { id: 18, question: 'Bread', answer: 'Brood' },
   { id: 19, question: 'Work', answer: 'Werk' },
-  { id: 20, question: 'Health', answer: 'Gezondheid'}
+  { id: 20, question: 'Health', answer: 'Gezondheid' }
 ]
+
+const flashcardsClass = document.querySelector('.flashcard')
 
 let randomCardNumber = Math.floor(Math.random() * flashcards.length)
 console.log("Random", randomCardNumber)
@@ -38,80 +40,85 @@ console.log(word)
 console.log("Question", flashcards[randomCardNumber].question)
 
 word.innerText = mapQuestions[randomCardNumber]
-  
-  function returnAnswer() {
-      return word.innerText = mapAnswers[randomCardNumber]
-  }
-  
-  function flipBack() {
-      return word.innerText = mapQuestions[randomCardNumber]
-  }
-  
-  function reload() {
-    location.reload(true)
-  }
 
-  const listOfQuestions = document.createElement('li')
-  const textNodeQuestions = document.createTextNode(mapQuestions)
-  listOfQuestions.appendChild(textNodeQuestions)
-  document.querySelector('.questions').appendChild(listOfQuestions)
+function returnAnswer() {
+  return word.innerText = mapAnswers[randomCardNumber]
+}
 
-  const listOfAnswers = document.createElement('li')
-  const textNodeAnswers = document.createTextNode(mapAnswers)
-  
-  const displayList = () => {
-    listOfAnswers.appendChild(textNodeAnswers)
-    document.querySelector('.answers').appendChild(listOfAnswers)
-  }
+function flipBack() {
+  return word.innerText = mapQuestions[randomCardNumber]
+}
 
-  function appendNewWord(){
-    let randomCardNumber = Math.floor(Math.random() * flashcards.length)
-    const newQuestion = document.createElement('h3')
-    const textNodeNewQuestion = document.createTextNode(flashcards[randomCardNumber].question)
-    newQuestion.appendChild(textNodeNewQuestion)
-    newQuestion.style.backgroundColor = 'red'
-    newQuestion.style.backgroundPosition = 'center'
-    newQuestion.style.height = '75px'
-    newQuestion.style.width = '160px'
-    newQuestion.style.fontStyle = 'bold'
-    document.querySelector('.flashcard').appendChild(newQuestion)
-  }
+function reload() {
+  location.reload(true)
+}
 
-  function returnAnswerAppend() {
-    let randomCardNumber = Math.floor(Math.random() * flashcards.length)
-    const newAnswer = document.createElement('h3')
-    const textNodeNewAnswer = document.createTextNode(flashcards[randomCardNumber].answer)
-    newAnswer.appendChild(textNodeNewAnswer)
-    newAnswer.style.backgroundColor = 'blue'
-    newAnswer.style.backgroundPosition = 'center'
-    newAnswer.style.height = '75px'
-    newAnswer.style.width = '160px'
-    newAnswer.style.fontStyle = 'bold'
-    document.querySelector('.flashcard').appendChild(newAnswer)
-  }
+const listOfQuestions = document.createElement('li')
+const textNodeQuestions = document.createTextNode(mapQuestions)
+listOfQuestions.appendChild(textNodeQuestions)
+document.querySelector('.questions').appendChild(listOfQuestions)
 
-  const addCardForm = document.forms['submitQuestionsAnswers']
-  console.log("Form", addCardForm)
-  
-  addCardForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const valueQuestion = addCardForm.querySelector('.questionForm').value;
-    console.log("Value Question Input", valueQuestion)
-    const valueAnswer = addCardForm.querySelector('.answerForm').value;
-    console.log("Value Answer Input", valueAnswer)
-    flashcards.push({id: (flashcards.length + 1), question: valueQuestion, answer: valueAnswer});
+const listOfAnswers = document.createElement('li')
+const textNodeAnswers = document.createTextNode(mapAnswers)
 
-    const newCard = document.createElement('h3')
-    const textNodeQuestion = document.createTextNode(valueQuestion + " (ENG)" + " " + valueAnswer + " (NL)")
-    newCard.appendChild(textNodeQuestion)
-    document.querySelector('.flashcard').appendChild(newCard)
-    newCard.style.backgroundColor = 'yellow'
-    newCard.style.backgroundPosition = 'center'
-    newCard.style.height = '75px'
-    newCard.style.width = '160px'
-    newCard.style.fontStyle = 'bold'
-    
-    document.getElementById('submitQuestionsAnswers').reset()
-  })
-  
-  console.log("Flashcards Array", flashcards)
+const displayList = () => {
+  listOfAnswers.appendChild(textNodeAnswers)
+  document.querySelector('.answers').appendChild(listOfAnswers)
+}
+
+function appendNewWord() {
+  let randomCardNumber = Math.floor(Math.random() * flashcards.length)
+  const newQuestion = document.createElement('h3')
+  const textNodeNewQuestion = document.createTextNode(flashcards[randomCardNumber].question)
+  newQuestion.appendChild(textNodeNewQuestion)
+  newQuestion.style.backgroundColor = 'red'
+  newQuestion.style.backgroundPosition = 'center'
+  newQuestion.style.height = '75px'
+  newQuestion.style.width = '160px'
+  newQuestion.style.fontStyle = 'bold'
+  flashcardsClass.appendChild(newQuestion)
+}
+
+function returnAnswerAppend() {
+  let randomCardNumber = Math.floor(Math.random() * flashcards.length)
+  const newAnswer = document.createElement('h3')
+  const textNodeNewAnswer = document.createTextNode(flashcards[randomCardNumber].answer)
+  newAnswer.appendChild(textNodeNewAnswer)
+  newAnswer.style.backgroundColor = 'blue'
+  newAnswer.style.backgroundPosition = 'center'
+  newAnswer.style.height = '75px'
+  newAnswer.style.width = '160px'
+  newAnswer.style.fontStyle = 'bold'
+  flashcardsClass.appendChild(newAnswer)
+}
+
+const addCardForm = document.forms['submitQuestionsAnswers']
+console.log("Form", addCardForm)
+
+addCardForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const valueQuestion = addCardForm.querySelector('.questionForm').value;
+  console.log("Value Question Input", valueQuestion)
+  const valueAnswer = addCardForm.querySelector('.answerForm').value;
+  console.log("Value Answer Input", valueAnswer)
+  flashcards.push({ id: (flashcards.length + 1), question: valueQuestion, answer: valueAnswer });
+
+  const newCard = document.createElement('h3')
+  const textNodeQuestion = document.createTextNode(valueQuestion + " (ENG)" + " " + valueAnswer + " (NL)")
+  newCard.appendChild(textNodeQuestion)
+  flashcardsClass.appendChild(newCard)
+  newCard.style.backgroundColor = 'yellow'
+  newCard.style.backgroundPosition = 'center'
+  newCard.style.height = '75px'
+  newCard.style.width = '160px'
+  newCard.style.fontStyle = 'bold'
+
+  document.getElementById('submitQuestionsAnswers').reset()
+})
+
+console.log("Flashcards Array", flashcards)
+
+function removeCard() {
+  flashcards.pop()
+  console.log("Flashcards After Pop", flashcards)
+}
