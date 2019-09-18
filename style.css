@@ -16,6 +16,7 @@
 
 .header {
   background-color: #c5d4ed ;
+  padding: 3rem;
 }
 
 main {
@@ -25,4 +26,5 @@ background-color: white;
 footer {
   text-align: center;
   background-color: #c5d4ed ;
+  padding: 3rem;
 }
