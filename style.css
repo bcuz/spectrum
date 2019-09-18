@@ -6,6 +6,7 @@
 
 .flashcard_container {
   text-align: center;
+  padding: 3rem;
 }
 
 .flashcard {
@@ -26,5 +27,9 @@ background-color: white;
 footer {
   text-align: center;
   background-color: #c5d4ed ;
+  padding: 3rem;
+}
+
+.buttons {
   padding: 3rem;
 }
