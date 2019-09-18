@@ -10,6 +10,8 @@
 
 .flashcard {
   text-align: center;
+  width: 160;
+  height: 75;
 }
 
 .header {

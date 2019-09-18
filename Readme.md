@@ -41,8 +41,9 @@ OK
 5. As a student I want to add my own flashcards with a question and an answer so I can test myself with questions that I personally struggle with.
 OK
 
-WORKING ON:
-
 6. As a student I want to be able to delete flashcards so I can keep testing myself with relevant questions.
+OK
+
+WORKING ON:
 
 7. As a student I want to be able to have different categories of flashcards, so I can study different subjects.
