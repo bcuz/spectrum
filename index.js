@@ -23,6 +23,7 @@ let flashcards = [
 ]
 
 const flashcardsClass = document.querySelector('.flashcard')
+const cardsLenght = flashcards.length
 
 let randomCardNumber = Math.floor(Math.random() * flashcards.length)
 console.log("Random", randomCardNumber)
@@ -53,10 +54,15 @@ function reload() {
   location.reload(true)
 }
 
-const listOfQuestions = document.createElement('li')
-const textNodeQuestions = document.createTextNode(mapQuestions)
-listOfQuestions.appendChild(textNodeQuestions)
-document.querySelector('.questions').appendChild(listOfQuestions)
+const listOfQuestions = document.createElement('ul')
+document.querySelector('.questionsDiv').appendChild(listOfQuestions)
+
+mapQuestions.forEach(function(mapQuestions){
+  const listQuestions = document.createElement('li');
+  listOfQuestions.appendChild(listQuestions);
+  listQuestions.innerHTML += mapQuestions;
+})
+
 
 const listOfAnswers = document.createElement('li')
 const textNodeAnswers = document.createTextNode(mapAnswers)
