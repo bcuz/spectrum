@@ -64,13 +64,14 @@ mapQuestions.forEach(function(mapQuestions){
 })
 
 
-const listOfAnswers = document.createElement('li')
-const textNodeAnswers = document.createTextNode(mapAnswers)
+const listOfAnswers = document.createElement('ul')
+document.querySelector('.answersDiv').appendChild(listOfAnswers)
 
-const displayList = () => {
-  listOfAnswers.appendChild(textNodeAnswers)
-  document.querySelector('.answers').appendChild(listOfAnswers)
-}
+const displayList = () => { mapAnswers.forEach(function(mapAnswers){
+const listAnswers = document.createElement('li');
+listOfAnswers.appendChild(listAnswers);
+listAnswers.innerHTML += mapAnswers
+})}
 
 function appendNewWord() {
   let randomCardNumber = Math.floor(Math.random() * flashcards.length)
