@@ -19,7 +19,13 @@ let flashcards = [
   { id: 17, question: 'Good morning', answer: 'Goedemorgen' },
   { id: 18, question: 'Bread', answer: 'Brood' },
   { id: 19, question: 'Work', answer: 'Werk' },
-  { id: 20, question: 'Health', answer: 'Gezondheid' }
+  { id: 20, question: 'Health', answer: 'Gezondheid' },
+  { id: 21, question: 'Peanut Butter', answer: 'Pindakaas'},
+  { id: 22, question: 'Good', answer: 'Goed'},
+  { id: 23, question: 'Summer', answer: 'Zommer'},
+  { id: 24, question: 'Spring', answer: 'Lente'},
+  { id: 25, question: 'Tea', answer: 'Thee'},
+  { id: 26, question: 'Dog', answer: 'Honde'}
 ]
 
 const flashcardsClass = document.querySelector('.flashcard')
@@ -88,8 +94,6 @@ const appendNewWord = () => {
   newQuestion.style.border = 'solid'
   newQuestion.setAttribute("id", "newQuestionAppended")
   flashcardsClass.appendChild(newQuestion)
-
-  console.log("Parent New Question", newQuestion.parentNode)
 }
 
 function returnAnswerAppend() {
@@ -128,6 +132,7 @@ addCardForm.addEventListener('submit', function (event) {
   newCard.style.width = '160px'
   newCard.style.fontStyle = 'bold'
   newCard.style.border = 'solid'
+  newCard.setAttribute("id", "newQuestionAppended")
 
   document.getElementById('submitQuestionsAnswers').reset()
 })
