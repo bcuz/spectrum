@@ -57,7 +57,7 @@ function reload() {
 const listOfQuestions = document.createElement('ul')
 document.querySelector('.questionsDiv').appendChild(listOfQuestions)
 
-mapQuestions.forEach(function(mapQuestions){
+mapQuestions.forEach(function (mapQuestions) {
   const listQuestions = document.createElement('li');
   listOfQuestions.appendChild(listQuestions);
   listQuestions.innerHTML += mapQuestions;
@@ -67,13 +67,15 @@ mapQuestions.forEach(function(mapQuestions){
 const listOfAnswers = document.createElement('ul')
 document.querySelector('.answersDiv').appendChild(listOfAnswers)
 
-const displayList = () => { mapAnswers.forEach(function(mapAnswers){
-const listAnswers = document.createElement('li');
-listOfAnswers.appendChild(listAnswers);
-listAnswers.innerHTML += mapAnswers
-})}
+const displayList = () => {
+  mapAnswers.forEach(function (mapAnswers) {
+    const listAnswers = document.createElement('li');
+    listOfAnswers.appendChild(listAnswers);
+    listAnswers.innerHTML += mapAnswers
+  })
+}
 
-function appendNewWord() {
+const appendNewWord = () => {
   let randomCardNumber = Math.floor(Math.random() * flashcards.length)
   const newQuestion = document.createElement('h3')
   const textNodeNewQuestion = document.createTextNode(flashcards[randomCardNumber].question)
@@ -84,7 +86,10 @@ function appendNewWord() {
   newQuestion.style.width = '160px'
   newQuestion.style.fontStyle = 'bold'
   newQuestion.style.border = 'solid'
+  newQuestion.setAttribute("id", "newQuestionAppended")
   flashcardsClass.appendChild(newQuestion)
+
+  console.log("Parent New Question", newQuestion.parentNode)
 }
 
 function returnAnswerAppend() {
@@ -98,6 +103,7 @@ function returnAnswerAppend() {
   newAnswer.style.width = '160px'
   newAnswer.style.fontStyle = 'bold'
   newAnswer.style.border = 'solid'
+  newAnswer.setAttribute("id", "newAnswerAppended")
   flashcardsClass.appendChild(newAnswer)
 }
 
@@ -131,4 +137,14 @@ console.log("Flashcards Array", flashcards)
 function removeCard() {
   flashcards.pop()
   console.log("Flashcards After Pop", flashcards)
+}
+
+const removeLastQuestion = () => {
+  const newQuestionAppended = document.getElementById("newQuestionAppended")
+  newQuestionAppended.parentNode.removeChild(newQuestionAppended)
+}
+
+const removeLastAnswer = () => {
+  const newAnswerAppended = document.getElementById("newAnswerAppended")
+  newAnswerAppended.parentNode.removeChild(newAnswerAppended)
 }
