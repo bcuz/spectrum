@@ -15,12 +15,15 @@
         <p style='font-size: 24px; text-decoration: underline'> An app to improve your vocabulary </p>
     </header>
     <main>
+        <br>
         <div class="flashcard_container">
+            <br>
             <p tyle="font-size: 18px"> Welcome to flashcards app! By default, you are given a card with a random word in
                 English, click on
                 'Flip card' to check its Dutch couterpart.<br>
                 Click on 'Flip back' to check the card in English again.<br>
-                You can also drop random cards in English and Dutch to your main page to practice your skills.
+                You can also drop random cards in English and Dutch to your main page to practice your skills.<br>
+                You may also add your own personal cards to the deck, so you can drop them randomly in the screen.
             </p>
             <br>
             <p style="font-size: 20px">Your cards are:</p>
@@ -35,14 +38,21 @@
         </div>
         <div class="buttons">
             <br>
+            <p style="font-size: 26px"> Buttons: </p>
+            <br>
+            <p> Main card Control (Online - Initial Cards)</p>
             <button id="button" onclick="returnAnswer()">Flip card - Dutch</button>
             <button id="button2" onclick="flipBack()">Flip back - English</button>
-            <button id="button3" onclick="reload()">Refresh Deck (Online)</button>
+            <button id="button3" onclick="reload()">Refresh Deck</button>
+            <br>
+            <p> Add New Questions and Answers (Offline)</p>
             <button id="button5" onclick="appendNewWord()">Drop Random Question</button>
             <button id="button6" onclick="returnAnswerAppend()">Drop Random Answer</button>
+            <br>
+            <p> Remove Displayed Cards or From Deck: </p>
             <button id="button7" onclick="removeCard()">Remove Card From Deck</button>
-            <button id="button8" onclick="removeLastQuestion()"> Remove Question</button>
-            <button id="button9" onclick="removeLastAnswer()"> Remove Answer</button>
+            <button id="button8" onclick="removeLastQuestion()"> Remove Displayed Questions</button>
+            <button id="button9" onclick="removeLastAnswer()"> Remove Displayed Answers</button>
             <br>
             <br>
             <br>
@@ -57,6 +67,7 @@
                 <p style="font-size: 20px">Your initial answers are:</p>
             </div>
         </div>
+        <br>
     </main>
     <footer>
         <h2> Flashcards App</h2>
