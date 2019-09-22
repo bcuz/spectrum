@@ -145,7 +145,7 @@ addCardForm.addEventListener('submit', function (event) {
   newCard.style.width = '160px'
   newCard.style.fontStyle = 'bold'
   newCard.style.border = 'solid'
-  newCard.setAttribute("id", "newQuestionAppended")
+  newCard.setAttribute("id", "newAddedCard")
 
   document.getElementById('submitQuestionsAnswers').reset()
 })
@@ -165,4 +165,9 @@ const removeLastQuestion = () => {
 const removeLastAnswer = () => {
   const newAnswerAppended = document.getElementById("newAnswerAppended")
   newAnswerAppended.parentNode.removeChild(newAnswerAppended)
+}
+
+const removeNewAddedCard = () => {
+  const newAddedCard = document.getElementById("newAddedCard")
+  newAddedCard.parentNode.removeChild(newAddedCard)
 }
