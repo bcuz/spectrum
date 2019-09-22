@@ -20,12 +20,12 @@ let flashcards = [
   { id: 18, question: 'Bread', answer: 'Brood' },
   { id: 19, question: 'Work', answer: 'Werk' },
   { id: 20, question: 'Health', answer: 'Gezondheid' },
-  { id: 21, question: 'Peanut Butter', answer: 'Pindakaas'},
-  { id: 22, question: 'Good', answer: 'Goed'},
-  { id: 23, question: 'Summer', answer: 'Zommer'},
-  { id: 24, question: 'Spring', answer: 'Lente'},
-  { id: 25, question: 'Tea', answer: 'Thee'},
-  { id: 26, question: 'Dog', answer: 'Honde'}
+  { id: 21, question: 'Peanut Butter', answer: 'Pindakaas' },
+  { id: 22, question: 'Good', answer: 'Goed' },
+  { id: 23, question: 'Summer', answer: 'Zommer' },
+  { id: 24, question: 'Spring', answer: 'Lente' },
+  { id: 25, question: 'Tea', answer: 'Thee' },
+  { id: 26, question: 'Dog', answer: 'Honde' }
 ]
 
 const flashcardsClass = document.querySelector('.flashcard')
@@ -47,6 +47,19 @@ console.log(word)
 console.log("Question", flashcards[randomCardNumber].question)
 
 word.innerText = mapQuestions[randomCardNumber]
+
+const newQuestion = () => {
+  console.log("Word", word)
+  let randomCardNumber = Math.floor(Math.random() * flashcards.length)
+  word.innerText = flashcards[randomCardNumber].question
+
+  const showAnswer = document.getElementById("button11")
+  showAnswer.addEventListener('click', function(){
+    word.innerText = flashcards[randomCardNumber].answer
+  })
+}
+
+console.log(newQuestion())
 
 function returnAnswer() {
   return word.innerText = mapAnswers[randomCardNumber]
