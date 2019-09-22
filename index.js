@@ -67,7 +67,7 @@ const newQuestion = () => {
   })
 
   const removeQuestion = document.getElementById('button13')
-  removeQuestion.addEventListener('click', function (){
+  removeQuestion.addEventListener('click', function () {
     const filterQuestion = flashcards.filter(flashcard => flashcard.question !== flashcards[randomCardNumber].question)
     console.log("filterQuestion", filterQuestion)
     flashcards = filterQuestion
@@ -94,20 +94,21 @@ document.querySelector('.questionsDiv').appendChild(listOfQuestions)
 
 mapQuestions.forEach(function (mapQuestions) {
   const listQuestions = document.createElement('li');
-  const removeButton = document.createElement('button');
-  removeButton.innerText = "Remove Card"
-  removeButton.setAttribute('id', 'removeButtonId')
+  // const removeButton = document.createElement('button');
+  // removeButton.innerText = "Remove Card"
+  // removeButton.setAttribute('id', 'removeButtonId')
   listOfQuestions.appendChild(listQuestions);
-  listOfQuestions.appendChild(removeButton)
+  // listOfQuestions.appendChild(removeButton)
   listQuestions.innerHTML += mapQuestions;
-})
 
-const removeButtonId = document.getElementById('removeButtonId')
-removeButtonId.addEventListener('click', function () {
-  const newFlashcardsList = flashcards.filter(flashcard => flashcard.question)
-  console.log("Filtered Array", newFlashcardsList)
+  // const removeButtonId = document.getElementById('removeButtonId')
+  // removeButtonId.addEventListener('click', function (event) {
+  //   const filterQuestion = flashcards.filter(flashcard => flashcard.question === mapQuestions)
+  //   console.log("filterQuestion", filterQuestion)
+  //   flashcards = filterQuestion
+  //   console.log(flashcards)
+  // })
 })
-
 
 const listOfAnswers = document.createElement('ul')
 document.querySelector('.answersDiv').appendChild(listOfAnswers)
@@ -165,7 +166,7 @@ addCardForm.addEventListener('submit', function (event) {
   const textNodeQuestion = document.createTextNode(valueQuestion + " (ENG)" + " " + valueAnswer + " (NL)")
   newCard.appendChild(textNodeQuestion)
   flashcardsClass.appendChild(newCard)
-  newCard.style.backgroundColor = 'yellow'
+  newCard.style.backgroundColor = '#f2ff9e'
   newCard.style.backgroundPosition = 'center'
   newCard.style.height = '85px'
   newCard.style.width = '160px'
