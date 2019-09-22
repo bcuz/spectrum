@@ -40,6 +40,9 @@ console.log("Map Questions", mapQuestions)
 const mapAnswers = flashcards.map(flashcard => flashcard.answer)
 console.log("Map Answers", mapAnswers)
 
+const filterQuestions = flashcards.filter(flashcard => flashcard.question)
+console.log("Filter Questions", filterQuestions)
+
 const word = document.getElementById("word")
 const button = document.getElementById("button")
 
@@ -54,8 +57,21 @@ const newQuestion = () => {
   word.innerText = flashcards[randomCardNumber].question
 
   const showAnswer = document.getElementById("button11")
-  showAnswer.addEventListener('click', function(){
+  showAnswer.addEventListener('click', function () {
     word.innerText = flashcards[randomCardNumber].answer
+  })
+
+  const flipBackNewQuestion = document.getElementById('button12')
+  flipBackNewQuestion.addEventListener('click', function () {
+    word.innerText = flashcards[randomCardNumber].question
+  })
+
+  const removeQuestion = document.getElementById('button13')
+  removeQuestion.addEventListener('click', function (){
+    const filterQuestion = flashcards.filter(flashcard => flashcard.question !== flashcards[randomCardNumber].question)
+    console.log("filterQuestion", filterQuestion)
+    flashcards = filterQuestion
+    console.log(flashcards)
   })
 }
 
@@ -80,9 +96,16 @@ mapQuestions.forEach(function (mapQuestions) {
   const listQuestions = document.createElement('li');
   const removeButton = document.createElement('button');
   removeButton.innerText = "Remove Card"
+  removeButton.setAttribute('id', 'removeButtonId')
   listOfQuestions.appendChild(listQuestions);
   listOfQuestions.appendChild(removeButton)
   listQuestions.innerHTML += mapQuestions;
+})
+
+const removeButtonId = document.getElementById('removeButtonId')
+removeButtonId.addEventListener('click', function () {
+  const newFlashcardsList = flashcards.filter(flashcard => flashcard.question)
+  console.log("Filtered Array", newFlashcardsList)
 })
 
 
@@ -156,7 +179,7 @@ addCardForm.addEventListener('submit', function (event) {
 console.log("Flashcards Array", flashcards)
 
 function removeCard() {
-  flashcards.pop()
+  flashcards.filter()
   console.log("Flashcards After Pop", flashcards)
 }
 
