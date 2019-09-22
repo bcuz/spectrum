@@ -78,7 +78,10 @@ document.querySelector('.questionsDiv').appendChild(listOfQuestions)
 
 mapQuestions.forEach(function (mapQuestions) {
   const listQuestions = document.createElement('li');
+  const removeButton = document.createElement('button');
+  removeButton.innerText = "Remove Card"
   listOfQuestions.appendChild(listQuestions);
+  listOfQuestions.appendChild(removeButton)
   listQuestions.innerHTML += mapQuestions;
 })
 
