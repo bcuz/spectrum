@@ -1,4 +1,4 @@
-# Flashcard App :NL: :uk:
+# :netherlands: Flashcard App :uk:
 
 This flashcards app is a simple application coded in vanilla JavaScript. 
 
