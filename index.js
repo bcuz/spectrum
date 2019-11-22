@@ -94,20 +94,8 @@ document.querySelector('.questionsDiv').appendChild(listOfQuestions)
 
 mapQuestions.forEach(function (mapQuestions) {
   const listQuestions = document.createElement('li');
-  // const removeButton = document.createElement('button');
-  // removeButton.innerText = "Remove Card"
-  // removeButton.setAttribute('id', 'removeButtonId')
   listOfQuestions.appendChild(listQuestions);
-  // listOfQuestions.appendChild(removeButton)
   listQuestions.innerHTML += mapQuestions;
-
-  // const removeButtonId = document.getElementById('removeButtonId')
-  // removeButtonId.addEventListener('click', function (event) {
-  //   const filterQuestion = flashcards.filter(flashcard => flashcard.question === mapQuestions)
-  //   console.log("filterQuestion", filterQuestion)
-  //   flashcards = filterQuestion
-  //   console.log(flashcards)
-  // })
 })
 
 const listOfAnswers = document.createElement('ul')
