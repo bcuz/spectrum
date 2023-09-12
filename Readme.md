@@ -2,12 +2,6 @@
 
 This flashcards app is a simple application coded in vanilla JavaScript. 
 
-## Trello Board
-
-This flashcards app has been created iteratively, using the following trello board.
-
-Trello Board: https://trello.com/b/1NDfqzFN/flashcard-app
-
 ## Features
 
 Flash cards are cards with a question on one side an an answer on the other. It's a tool used to learn vocabulary words when learning languages. This is a simple app where people can make digital flashcards of which they can see the question and answer.
