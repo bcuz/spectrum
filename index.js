@@ -52,7 +52,7 @@ const newQuestion = () => {
   const showAnswer = document.getElementById("button11")
   showAnswer.addEventListener('click', function () {
     word.innerText = flashcards[randomCardNumber].answer
-    document.getElementsByClassName('flashcard')[0].style.backgroundColor = '#c5d4ed'
+    document.getElementsByClassName('flashcard')[0].style.backgroundColor = '#fff'
   })
 
   const flipBackNewQuestion = document.getElementById('button12')
