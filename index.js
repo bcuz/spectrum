@@ -7,7 +7,7 @@ let flashcards = [
   { id: 5, question: 'dark blue', answer: 'native & foreign language', backgroundColor: '#4a53a2' },
   { id: 6, question: 'light green', answer: 'national origin', backgroundColor: '#b4d548' },
   { id: 7, question: 'green', answer: 'national region', backgroundColor: '#20b155' },
-  { id: 8, question: 'light purple', answer: 'political ideology & though', backgroundColor: '#a2499a' },
+  { id: 8, question: 'light purple', answer: 'political ideology & thought', backgroundColor: '#a2499a' },
   { id: 9, question: 'pink', answer: 'religion', backgroundColor: '#f7acc7' },
   { id: 10, question: 'red', answer: 'sexual orientation', backgroundColor: '#ef1e28' },
   { id: 11, question: 'dark red', answer: 'physical health/illness', backgroundColor: '#89161a' },
