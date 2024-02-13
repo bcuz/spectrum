@@ -40,13 +40,13 @@ const button = document.getElementById("button")
 console.log(word)
 console.log("Question", flashcards[randomCardNumber].question)
 
-word.innerText = mapQuestions[randomCardNumber]
+// word.innerText = mapQuestions[randomCardNumber]
 
 const newQuestion = () => {
   console.log("Word", word)
   let randomCardNumber = Math.floor(Math.random() * flashcards.length)
   document.getElementsByClassName('flashcard')[0].style.backgroundColor = flashcards[randomCardNumber].backgroundColor
-  word.innerText = flashcards[randomCardNumber].question
+  word.innerText = ''
   
   
   const showAnswer = document.getElementById("button11")
@@ -57,7 +57,7 @@ const newQuestion = () => {
 
   const flipBackNewQuestion = document.getElementById('button12')
   flipBackNewQuestion.addEventListener('click', function () {
-    word.innerText = flashcards[randomCardNumber].question
+  word.innerText = ''
   document.getElementsByClassName('flashcard')[0].style.backgroundColor = flashcards[randomCardNumber].backgroundColor
 
   })
